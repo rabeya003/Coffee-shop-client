@@ -4,13 +4,12 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import AddCoffee from "./Components/AddCoffee.jsx";
-import ErrorPage from "./Components/ErrorPage.jsx";
+import UpdateCoffee from "./Components/UpdateCoffee.jsx";
 import Signup from "./Components/Signup.jsx";
 import Signin from "./Components/Signin.jsx";
-import AuthProvider from "./Providers/AuthProvider.jsx";
 import Users from "./Components/Users.jsx";
 import UpdateUser from "./Components/UpdateUser.jsx";
-import UpdateCoffee from "./Components/UpdateCoffee.jsx";
+import AuthProvider from "./Providers/AuthProvider.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +17,6 @@ const router = createBrowserRouter([
     element: <App />,
     loader: () =>
       fetch("https://coffee-store-server-1xx3ez9au-anfal11.vercel.app/coffee"),
-    errorElement: <ErrorPage />,
   },
   {
     path: "/addCoffee",
