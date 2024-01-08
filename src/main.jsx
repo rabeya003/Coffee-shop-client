@@ -5,11 +5,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import AddCoffee from "./Components/AddCoffee.jsx";
 import UpdateCoffee from "./Components/UpdateCoffee.jsx";
-import Signup from "./Components/Signup.jsx";
-import Signin from "./Components/Signin.jsx";
 import Users from "./Components/Users.jsx";
 import UpdateUser from "./Components/UpdateUser.jsx";
 import AuthProvider from "./Providers/AuthProvider.jsx";
+import Signup from "./Components/Signup.jsx";
+import Signin from "./Components/Signin.jsx";
 
 const router = createBrowserRouter([
   {

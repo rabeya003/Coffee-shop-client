@@ -40,8 +40,8 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
   return (
     <div className="">
       <div className="card h-[200px] card-side bg-[#ECEAE3] shadow-xl">
-        <figure>
-          <img src={photo} alt="coffee" />
+        <figure className="m-4">
+          <img src={photo} className="w-44 rounded-lg" alt="coffee" />
         </figure>
         <div className="flex justify-between items-center w-full pr-10">
           <div>
